@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+/* Variavaies CSS */
+
+:root{
+
+     /* ---------- Cores  ----------*/
+    --color-pink:#FF3CAC; /* Cor Primaria */
+    --color-white:#FFFFFF;
+    --color-d-gray:#4D4D4D;
+    --color-l-black:#0F0F0F;
+    --color-l-gray:#999999;
+    --color-black:#000000;
+
+    /* ---------- Fontes ---------- */
+    /* --------- Size --------- */
+    --font-size-h1:50px;
+    --font-size-h2:45px;
+    --font-size-h3:27px;
+    --font-size-h4:21px;
+    --font-size-body:20px;
+    --font-size-body2:18px;
+    --font-size-body3:16px;
+    --font-size-body4:14px;
+
+   
+    /*---------  Weight ---------*/
+
+    --font-weight-h1:700;
+    --font-weight-h2:500;
+    --font-weight-h3:700;
+    --font-weight-h4:700;
+    --font-weight-body:700;
+    --font-weight-body2:700;
+    --font-weight-body3:400;
+    --font-weight-body4:400;
+
+
+    /* --------- Familia ---------*/
+    --font-family-primary: "Alexandria", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+   
+
+}
+
+/* ------- Configuração dos Titulos ------- */
+h1{
+    --font-size: var(--font-size-h1);
+    --font-weight: var(--font-weight-h1);
+    --font-family: var(--font-family-primary);
+}
+
+h2{
+    --font-size: var(--font-size-h2);
+    --font-weight: var(--font-weight-h2);
+    --font-family: var(--font-family-primary);
+}
+
+h3{
+    --font-size: var(--font-size-h3);
+    --font-weight: var(--font-weight-h3);
+    --font-family: var(--font-family-secondary);
+}
+
+h4{
+    --font-size: var(--font-size-h4);
+    --font-weight: var(--font-weight-h4);
+    --font-family: var(--font-family-primary);
+}
