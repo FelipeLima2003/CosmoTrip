@@ -1,1 +1,48 @@
 @import url(./global.css);
+
+header{
+    background-color: var(--color-l-black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 200px;
+}
+
+.container-nav-header ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.container-nav-header ul li, .container-nav-header ul li a, .container-nav-header ul li a span{
+    list-style: none;
+    color: var(--color-l-gray);
+    font-size: var(--font-size-body3);
+    font-weight: var(--font-weight-body3);
+    font-family: var(--font-family-primary);
+    text-decoration: none;
+}
+
+.container-nav-header ul li a span{
+    color: var(--color-pink);
+}
+
+.btn-header{
+    padding: 8px 24px;
+    background-color: var(--color-pink);
+    border-radius: 10px;
+    color: var(--color-white);
+    text-align: center;
+    font-size: var(--font-size-body3);
+    font-weight: var(--font-weight-body3);
+    font-family: var(--font-family-primary);
+    text-decoration: none;
+}
+
+.btn-header:hover{
+    transition: 0.3s;
+    color: #001F3F;
+    background-color: #fff;
+    color: var(--color-pink);
+}
