@@ -1,48 +1,139 @@
 @import url(./global.css);
 
-header{
-    background-color: var(--color-l-black);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    gap: 200px;
+header {
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 200px;
 }
 
-.container-nav-header ul{
-    display: flex;
-    gap: 40px;
-    align-items: center;
+.container-nav-header ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
-.container-nav-header ul li, .container-nav-header ul li a, .container-nav-header ul li a span{
-    list-style: none;
-    color: var(--color-l-gray);
-    font-size: var(--font-size-body3);
-    font-weight: var(--font-weight-body3);
-    font-family: var(--font-family-primary);
-    text-decoration: none;
+.container-nav-header ul li,
+.container-nav-header ul li a,
+.container-nav-header ul li a span {
+  list-style: none;
+  color: var(--color-l-gray);
+  font-size: var(--font-size-body3);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-primary);
+  text-decoration: none;
 }
 
-.container-nav-header ul li a span{
-    color: var(--color-pink);
+.container-nav-header ul li a span {
+  color: var(--color-pink);
 }
 
-.btn-header{
-    padding: 8px 24px;
-    background-color: var(--color-pink);
-    border-radius: 10px;
-    color: var(--color-white);
-    text-align: center;
-    font-size: var(--font-size-body3);
-    font-weight: var(--font-weight-body3);
-    font-family: var(--font-family-primary);
-    text-decoration: none;
+.btn-header {
+  padding: 8px 24px;
+  background-color: var(--color-pink);
+  border-radius: 10px;
+  color: var(--color-white);
+  text-align: center;
+  font-size: var(--font-size-body3);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-primary);
+  text-decoration: none;
 }
 
-.btn-header:hover{
-    transition: 0.3s;
-    color: #001F3F;
-    background-color: #fff;
-    color: var(--color-pink);
+.btn-header:hover {
+  transition: 0.3s;
+  color: #001f3f;
+  background-color: #fff;
+  color: var(--color-pink);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  gap: 100px;
+  background-color: var(--color-black);
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container-main-text {
+  display: flex;
+  border: 1px solid var(--color-l-gray);
+  padding: 10px 12px;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  gap: 8px;
+  width: 81px;
+  filter: blur(0.4px);
+}
+
+.container-main-text span {
+  color: var(--color-pink);
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body4);
+  font-family: var(--font-family-primary);
+}
+
+.container-main h1 {
+  color: var(--color-white);
+  width: 549px;
+  line-height: 110%;
+  font-size: var(--font-size-h1);
+}
+
+.container-main h1 span {
+  color: var(--color-pink);
+}
+
+.container-main p {
+  color: var(--color-l-gray);
+  width: 513px;
+  line-height: 140%;
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-secondary);
+}
+.container-main nav {
+  display: flex;
+  gap: 20px;
+}
+
+.container-main-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 10px;
+  padding: 14px 24px;
+  border: 1.5px solid var(--color-l-gray);
+}
+.btn-primary {
+  padding: 14px 24px;
+  background-color: var(--color-pink);
+  border-radius: 10px;
+  color: var(--color-white);
+  text-decoration: none;
+  line-height: 140%;
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-secondary);
+  border: 1.5px solid var(--#ECECED);
+}
+
+.btn-secondary {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-decoration: none;
+  line-height: 140%;
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-secondary);
 }
