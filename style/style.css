@@ -1,5 +1,7 @@
 @import url(./global.css);
 
+
+/* Seção Header */
 header {
   background-color: var(--color-black);
   display: flex;
@@ -40,6 +42,7 @@ header {
   font-weight: var(--font-weight-body3);
   font-family: var(--font-family-primary);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-header:hover {
@@ -49,6 +52,7 @@ header {
   color: var(--color-pink);
 }
 
+/* Seção principal */
 main {
   display: flex;
   justify-content: center;
@@ -126,6 +130,7 @@ main {
   font-weight: var(--font-weight-body3);
   font-family: var(--font-family-secondary);
   border: 1.5px solid var(--#ECECED);
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -136,4 +141,205 @@ main {
   font-size: var(--font-size-body2);
   font-weight: var(--font-weight-body3);
   font-family: var(--font-family-secondary);
+  cursor: pointer;
 }
+
+.container-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 56px;
+  background-color: var(--color-l-black);
+}
+
+.container-details-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-details-text h2 {
+  color: var(--color-pink);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  font-family: var(--font-family-primary);
+  line-height: 100%;
+}
+
+.container-details-text p{
+  color: var(--color-l-gray);
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-secondary);
+}
+
+.container-vacation{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.container-vacation-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-vacation-text div {
+  display: flex;
+  border: 1px solid var(--color-l-gray);
+  padding: 12px 20px;
+  backdrop-filter: blur(12px);
+  width: 179px;
+  filter: blur(0.4px);
+  justify-content: center;
+  border-radius: 24px;
+  gap: 8px;
+  width: max-content;
+
+}
+
+.container-vacation-text div span {
+  color: var(--color-pink);
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body2);
+  font-family: var(--font-family-primary);
+  text-align: center;
+  width:139px;
+}
+
+.container-vacation-text h2{
+  color: var(--color-white);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  font-family: var(--font-family-primary);
+  width: 433px;
+}
+
+.container-vacation-text p{
+  color: var(--color-l-gray);
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body4);
+  font-family: var(--font-family-secondary);
+  max-width: 600px;
+  line-height: 140%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.container-vacation-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-vacation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color-l-black);
+  width: 364px;
+  border-radius: 18.29px;
+  padding: 14.4px;
+
+}
+
+.card-vacation > img{
+  width: calc(100% + 14.4px + 14.4px);
+ 
+  margin-top: -14.4px;   
+  margin-left: -14.4px; 
+  margin-right: -14.4px;  
+
+}
+
+.card-vacation h3{
+  color: var(--color-white);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  font-family: var(--font-family-secondary);
+  text-align: center;
+}
+
+.card-vacation > p{
+  color: var(--color-l-gray);
+  font-size: var(--font-size-body3);
+  font-weight: var(--font-weight-body3);
+  font-family: var(--font-family-primary);
+}
+
+
+.card-vacation-stars{
+  display: flex;
+  gap: 9.15px;
+}
+
+.card-vacation-stars > p{
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--color-l-gray);
+}
+
+.card-vacation-information{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-vacation-group{
+  display: flex;
+  gap: 9.15px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-vacation-group p{
+  font-family: var(--font-family-primary);
+  color: var(--color-l-gray);
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body4);
+
+}
+
+.card-vacation-group img{
+  width: 18.39px;
+}
+
+
+ .card-vacation-price{
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4);
+  color: var(--color-white);
+}
+
+
+.btn-vacation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+  padding: 9.15px;
+  border-radius: 9.15px;
+  text-decoration: none;
+
+}
+  
+
+
