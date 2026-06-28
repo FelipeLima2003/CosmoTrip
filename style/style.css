@@ -196,7 +196,7 @@ main {
 
 .container-vacation-text div {
   display: flex;
-  border: 1px solid var(--color-l-gray);
+  border: 1px solid var(--color-d-gray);
   padding: 12px 20px;
   backdrop-filter: blur(12px);
   width: 179px;
@@ -252,17 +252,15 @@ main {
   background-color: var(--color-l-black);
   width: 364px;
   border-radius: 18.29px;
-  padding: 14.4px;
+  padding: 14.4px
 
 }
 
 .card-vacation > img{
   width: calc(100% + 14.4px + 14.4px);
- 
   margin-top: -14.4px;   
   margin-left: -14.4px; 
   margin-right: -14.4px;  
-
 }
 
 .card-vacation h3{
@@ -342,4 +340,107 @@ main {
 }
   
 
+/* Seção - Treadings */
 
+.container-treadings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  background-color: var(--color-l-black);
+  gap: 60px;
+}
+
+.content-treadings-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.content-treadings-text div{
+  display: flex;
+  border: 1px solid var(--color-d-gray);
+  padding: 12px 20px;
+  backdrop-filter: blur(12px);
+  width: 116px;
+  filter: blur(0.4px);
+  justify-content: center;
+  border-radius: 24px;
+  gap: 8px;
+  width: max-content;
+}
+
+
+.content-treadings-text div span{
+  color: var(--color-pink);
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body2);
+  font-family: var(--font-family-primary);
+}
+
+
+.content-treadings-text h2{
+  color: var(--color-white);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  font-family: var(--font-family-primary);
+  line-height: 100%;
+}
+
+.content-treadings-text p{
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body4);
+  font-family: var(--font-family-secondary);
+  color: var(--color-l-gray);
+  text-align: center;
+  line-height: 140%;
+  width: 572px;
+}
+
+.content-treadings{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-l-black);
+}
+
+.card-treadings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 79px 36px 80px 35px;
+  width: 363px;
+  gap: 20px;
+  background-color: var(--color-black);
+}
+
+.card-treadings-02-padding{
+  padding: 89.5px 36px 90px 35px;
+}
+
+.card-treadings-03-padding{
+  padding: 82px 36px 83px 35px;
+
+}
+
+.card-treadings h3{
+  color: var(--color-white);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-body3);
+  text-align: center;
+  font-family: var(--font-family-primary);
+}
+
+.card-treadings p {
+  color: var(--color-l-gray);
+  font-size: var(--font-body-h4);
+  font-weight: var(--font-weight-body3);
+  text-align: center;
+  font-family: var(--font-family-primary);
+}
