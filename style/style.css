@@ -92,6 +92,8 @@ main {
   width: 549px;
   line-height: 110%;
   font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  font-family: var(--font-family-primary );
 }
 
 .container-main h1 span {
@@ -340,7 +342,6 @@ main {
   text-decoration: none;
 
 }
-  
 
 /* Seção - Treadings */
 
@@ -640,5 +641,102 @@ main {
 
 .content-faq details summary img{
   transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color-black);
+  padding: 40px;
+  gap: 126px;
+}
+
+.footer-information{
+  display: flex;
+  justify-content: start;
+  gap: 69.67px;
+}
+
+.footer-information-item{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.footer-information-item h2{
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-body4);
+  color: var(--color-white);
+}
+
+.footer-information-item ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-information-item ul li a{
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--color-l-gray);
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 0.5px solid var(--color-d-gray);
+}
+
+.footer-contact h2{
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-body4);
+  color: var(--color-white);
+  width: 198px;
+  line-height: 140%;
+  align-content: center;
+
+}
+
+
+.footer-contact form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 11.5px;
+  gap: 10px;
+  opacity: 11%;
+ 
+}
+
+
+.footer-contact form input{
+  width: 385px;
+  background-color: transparent;
+  font-family: var(--color-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body4);
+  color: var(--color-l-gray);
+}
+
+.btn-footer-contact-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 30px;
+  width: 40px;
+  background-color: var(--color-pink);
+  box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
   cursor: pointer;
 }
