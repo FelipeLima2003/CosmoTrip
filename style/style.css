@@ -714,10 +714,9 @@ footer{
   align-items: center;
   padding-bottom: 11.5px;
   gap: 10px;
-  opacity: 11%;
+  opacity: 5%;
  
 }
-
 
 .footer-contact form input{
   width: 385px;
@@ -725,7 +724,7 @@ footer{
   font-family: var(--color-primary);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-body4);
-  color: var(--color-l-gray);
+  color: var(--color-white);
 }
 
 .btn-footer-contact-arrow {
@@ -739,4 +738,75 @@ footer{
   box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
   cursor: pointer;
+}
+
+/* Responsividade do site para telas de tablets */
+
+@media (max-width: 884px) {
+ 
+  header{
+    gap: 30px;
+    
+  }
+
+  header .container-nav-header ul{
+    gap: 15px;
+  }
+
+  main{
+    flex-direction: column-reverse;
+  }
+
+  .container-main{
+    flex-direction: column;
+    align-items: center;          
+    text-align: center;
+ }
+
+ .container-details{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+
+.container-vacation-cards{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.card-vacation{
+  width: 550px;
+}
+
+.content-treadings{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.card-treadings{
+  width: 500px;
+  height: 400px;
+}
+
+.content-testimonials{
+  grid-template-columns: repeat(2,1fr);
+}
+
+.content-faq{
+  width: 100%;
+  max-width: 720px;
+}
+
+
+.content-faq details summary p{
+  width: 100%;
+  margin: 0;
+
+}
+
+footer{
+  flex-direction: column;
+  gap: 60px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
 }
