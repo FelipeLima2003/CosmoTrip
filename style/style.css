@@ -964,6 +964,9 @@ footer {
   .content-faq details summary p {
     width: 100%;
     max-width: 200px;
+    font-size: var(--font-size-body4);
+    font-weight: var(--font-weight-body4);
+    margin: 0 auto;
   }
 
 
